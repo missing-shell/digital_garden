@@ -1,3 +1,9 @@
+---
+title: Linux
+draft: false
+tags:
+  - 面经
+---
 - [ ] 什么是posix
 - [ ] 为什么通过apt-get去下载依赖库，有没有其他方式
 ## Linux 内核
