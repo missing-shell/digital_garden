@@ -44,6 +44,8 @@ jobs:
         run: npx quartz plugin install
       - name: Build Quartz
         run: npx quartz build -d working
+      - name: Disable Jekyll
+        run: touch public/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
