@@ -1,0 +1,18 @@
+{
+	"nodes":[
+		{"id":"c5bf3ad46edc6b72","type":"text","text":"app_task","x":-100,"y":-380,"width":140,"height":60},
+		{"id":"2018d3535a99070e","type":"text","text":"LwIP_task","x":-577,"y":-74,"width":150,"height":60},
+		{"id":"170625d06e2d92e9","type":"text","text":"event_task","x":397,"y":153,"width":158,"height":60},
+		{"id":"2c0802dfd3690cd9","type":"text","text":"WIFI_driver","x":-247,"y":153,"width":172,"height":60}
+	],
+	"edges":[
+		{"id":"9e310a0f66d80d61","fromNode":"c5bf3ad46edc6b72","fromSide":"left","toNode":"2018d3535a99070e","toSide":"top","label":"1.esp_netif_init()"},
+		{"id":"d5cbe5de876de9df","fromNode":"c5bf3ad46edc6b72","fromSide":"right","toNode":"170625d06e2d92e9","toSide":"top","label":"4.wifi_event_handle()"},
+		{"id":"77a5a8b169bba006","fromNode":"c5bf3ad46edc6b72","fromSide":"bottom","toNode":"2c0802dfd3690cd9","toSide":"left","label":"3.esp_wifi_init()"},
+		{"id":"e9ba3f8ba78825a0","fromNode":"c5bf3ad46edc6b72","fromSide":"right","toNode":"170625d06e2d92e9","toSide":"left","label":"2.esp_event_loop_create_default()"},
+		{"id":"2ce39d590d37ad80","fromNode":"c5bf3ad46edc6b72","fromSide":"bottom","toNode":"2c0802dfd3690cd9","toSide":"top","label":"5.config wifi"},
+		{"id":"6a132d5f25d3c29a","fromNode":"c5bf3ad46edc6b72","fromSide":"bottom","toNode":"2c0802dfd3690cd9","toSide":"right","label":"6.esp_wifi_start()"},
+		{"id":"32f644268ac2ffa7","fromNode":"2c0802dfd3690cd9","fromSide":"bottom","toNode":"170625d06e2d92e9","toSide":"bottom","color":"5","label":"8.WIFI_EVENT_AP_STACONNECTED\n\n\n9.WIFI_EVENT_AP_STADISCONNECTED"},
+		{"id":"71e8a4aa6287f91a","fromNode":"2c0802dfd3690cd9","fromSide":"bottom","toNode":"170625d06e2d92e9","toSide":"left","label":"7.WIFI_EVENT_AP_START"}
+	]
+}

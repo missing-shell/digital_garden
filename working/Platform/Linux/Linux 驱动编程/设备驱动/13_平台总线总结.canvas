@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"903de16a97873290","type":"text","text":"平台总线模型","x":-400,"y":-20,"width":250,"height":60},
+		{"id":"373419980d625827","type":"text","text":"`driver()`","x":-29,"y":-146,"width":250,"height":60},
+		{"id":"58ff0109b24f258f","type":"text","text":"`device()`","x":-15,"y":77,"width":250,"height":60},
+		{"id":"6610728602d5b216","type":"text","text":"匹配成功进入`probe`函数","x":340,"y":-50,"width":341,"height":60},
+		{"id":"ad48c6d18abbfa52","type":"text","text":"杂项设备注册","x":780,"y":-129,"width":250,"height":60},
+		{"id":"b0912858df0942be","type":"text","text":"设备树文件","x":-265,"y":360,"width":250,"height":60},
+		{"id":"f4bcab2f0355e8fb","type":"text","text":"字符设备注册","x":780,"y":77,"width":250,"height":60}
+	],
+	"edges":[
+		{"id":"f05a23ac6efb7e98","fromNode":"903de16a97873290","fromSide":"right","toNode":"373419980d625827","toSide":"left"},
+		{"id":"da6df4f11cd17de8","fromNode":"373419980d625827","fromSide":"right","toNode":"6610728602d5b216","toSide":"left"},
+		{"id":"abea39f6e59e93fe","fromNode":"903de16a97873290","fromSide":"right","toNode":"58ff0109b24f258f","toSide":"left"},
+		{"id":"6a97bbeb65a639a4","fromNode":"58ff0109b24f258f","fromSide":"right","toNode":"6610728602d5b216","toSide":"left"},
+		{"id":"5908f86709ffd6d8","fromNode":"6610728602d5b216","fromSide":"right","toNode":"ad48c6d18abbfa52","toSide":"left"},
+		{"id":"b92fce6e6b02ef9e","fromNode":"6610728602d5b216","fromSide":"right","toNode":"f4bcab2f0355e8fb","toSide":"left"},
+		{"id":"203d49cc305461ba","fromNode":"b0912858df0942be","fromSide":"right","toNode":"58ff0109b24f258f","toSide":"bottom"}
+	]
+}
