@@ -46,6 +46,10 @@ jobs:
         run: npx quartz build -d working
       - name: Disable Jekyll
         run: touch public/.nojekyll
+      - name: Fix 404 for GitHub Pages
+        run: |
+          sed -i 's|if (lowered !== pathname|if (true \&\& lowered !== pathname|' public/404.html
+          sed -i 's|window.location.replace(target);|window.location.replace(target + ".html");|' public/404.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
