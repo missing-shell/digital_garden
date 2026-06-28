@@ -1,1 +1,0 @@
-harness指的是整套从需求到prd spec到可执行item到linter/compiler/evaluator/hooks/qa/ci的闭环反馈
