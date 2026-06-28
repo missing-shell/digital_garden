@@ -21,6 +21,8 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          submodules: recursive
+          token: ${{ secrets.GH_PAT }}
       - uses: actions/setup-node@v6
         with:
           node-version: 24
@@ -43,7 +45,7 @@ jobs:
       - name: Install Quartz plugins
         run: npx quartz plugin install
       - name: Build Quartz
-        run: npx quartz build -d working
+        run: npx quartz build -d working/thinking
       - name: Disable Jekyll
         run: touch public/.nojekyll
       - name: Upload artifact
